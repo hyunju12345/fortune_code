@@ -66,11 +66,9 @@ function performAnalysis() {
 
   let message = "✨ 당신의 그림 분석 결과 ✨\n\n";
 
-  // 감정 분류용 기준 변수들
   const colorCount = colorsUsed.size;
   const avgWeight = strokeWeights.reduce((a, b) => a + b, 0) / strokeWeights.length;
 
-  // 감정 판단 로직 (단순화된 버전)
   if (colorCount >= 6 && totalMovement > 5000) mood = "energetic";
   else if (totalMovement < 1000) mood = "tired";
   else if (avgY > height * 0.6 && avgWeight < 5) mood = "calm";
@@ -99,6 +97,22 @@ function performAnalysis() {
            : "";
 
   message += "\n🎵 오늘의 감정: " + mood + "\n";
+
+  const bgm = document.getElementById("bgm");
+  const musicMap = {
+    energetic: "energetic.mp3",
+    calm: "calm.mp3",
+    tired: "tired.mp3",
+    chaotic: "chaotic.mp3"
+  };
+  bgm.src = musicMap[mood];
+  bgm.muted = true;
+  bgm.play().then(() => {
+    bgm.muted = false;
+  }).catch(() => {
+    console.warn("음악 자동 재생 차단됨. 클릭 후 재생 가능함.");
+  });
+
   fetch(`https://musicbrainz.org/ws/2/artist?query=tag:${mood}&fmt=json`)
     .then(res => res.json())
     .then(data => {
