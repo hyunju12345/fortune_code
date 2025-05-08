@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>당신의 그림으로 보는 심리 운세</title>
+  <title>Your Drawing-Based Fortune</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
   <script>
@@ -26,7 +26,7 @@
         document.getElementById("result").style.display = "block";
 
         const analyzeBtn = document.getElementById("analyzeBtn");
-        analyzeBtn.textContent = "🆕 다시 그리기";
+        analyzeBtn.textContent = "🆕 Draw Again";
         analyzeBtn.onclick = () => window.location.reload();
       }
     }
@@ -38,26 +38,26 @@
 </head>
 <body>
   <h1>✨ Draw Your Fortune ✨</h1>
-  <p>그림을 그리고 당신의 감정 상태와 운세를 확인해보세요.</p>
+  <p>Draw freely and discover your emotional state and fortune.</p>
 
   <div class="controls">
-    <label for="colorPicker">🎨 색상 선택:</label>
+    <label for="colorPicker">🎨 Color:</label>
     <input type="color" id="colorPicker" value="#000000">
 
-    <label for="penSize">🖊️ 펜 두께:</label>
+    <label for="penSize">🖊️ Pen Size:</label>
     <input type="range" id="penSize" min="1" max="20" value="4" oninput="document.getElementById('penSizeValue').textContent = this.value;">
     <span id="penSizeValue">4</span>
 
-    <button class="brush-button" id="normalBtn" onclick="setBrushMode('normal')">✨ 일반 브러시</button>
-    <button class="brush-button" id="dottedBtn" onclick="setBrushMode('dotted')">🔹 점선 브러시</button>
-    <button class="brush-button" id="softBtn" onclick="setBrushMode('soft')">☁️ 부드러운 브러시</button>
-    <button class="brush-button" id="eraserBtn" onclick="toggleEraser()">🧹 지우개</button>
+    <button class="brush-button" id="normalBtn" onclick="setBrushMode('normal')">✨ Normal Brush</button>
+    <button class="brush-button" id="dottedBtn" onclick="setBrushMode('dotted')">🔹 Dotted Brush</button>
+    <button class="brush-button" id="softBtn" onclick="setBrushMode('soft')">☁️ Soft Brush</button>
+    <button class="brush-button" id="eraserBtn" onclick="toggleEraser()">🧹 Eraser</button>
   </div>
 
   <div id="canvas-container"></div>
 
   <div style="margin-top: 20px;">
-    <button id="analyzeBtn" onclick="analyzeDrawing()">🔮 운세 분석</button>
+    <button id="analyzeBtn" onclick="analyzeDrawing()">🔮 Analyze Fortune</button>
   </div>
 
   <div id="result"></div>

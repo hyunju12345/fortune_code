@@ -1,38 +1,40 @@
 {
-    "amount": {
-      "low": "🌧️ 거의 그리지 않았어요. 조심스럽거나 마음이 닫혀 있을 수 있어요.",
-      "medium": "✏️ 적절한 양의 표현을 했어요. 생각이 정돈되어 있거나 침착한 상태로 보여요.",
-      "high": "🌟 매우 표현력이 풍부해요. 감정이 넘치거나 복잡한 상태일 수 있어요."
-    },
-    "color": {
-      "low": "🎨 단색만 사용했어요. 집중되어 있거나 감정이 제한적일 수 있어요.",
-      "medium": "🖌️ 몇 가지 색상을 사용했어요. 균형 잡힌 상태일 가능성이 있어요.",
-      "high": "🌈 다양한 색상을 사용했네요! 감정이 풍부하거나 창의력이 넘쳐 보여요."
-    },
-    "weight": {
-      "thin": "✒️ 얇은 선 위주로 그렸어요. 세심하거나 예민한 상태일 수 있어요.",
-      "normal": "🖊️ 적당한 두께의 선을 사용했어요. 평온하고 안정된 상태로 보입니다.",
-      "thick": "🖍️ 굵은 선이 많아요. 강한 감정 표현이나 자신감이 느껴집니다."
-    },
-    "brush": {
-      "normal": "🎯 일반 브러시를 주로 사용했어요. 일관된 집중력이 느껴져요.",
-      "dotted": "🔵 점선 브러시를 많이 썼어요. 반복적인 생각이나 집중 상태일 수 있어요.",
-      "soft": "☁️ 부드러운 브러시를 자주 사용했어요. 감성적이고 섬세한 상태로 보입니다."
-    },
-    "positionY": {
-      "top": "⬆️ 위쪽에 많이 그렸어요. 희망, 미래지향적 사고를 반영할 수 있어요.",
-      "center": "↕️ 중앙에 가까운 위치에 그렸어요. 균형 잡힌 감정 상태로 보입니다.",
-      "bottom": "⬇️ 아래쪽에 그렸어요. 안정 추구 또는 현실적인 마음 상태일 수 있어요."
-    },
-    "positionX": {
-      "left": "⬅️ 왼쪽에 치우친 그림입니다. 과거 회상이나 내면 집중 상태일 수 있어요.",
-      "center": "↔️ 중심에 가까워요. 현재에 집중하고 있을 가능성이 높아요.",
-      "right": "➡️ 오른쪽에 치우쳤어요. 미래지향적이거나 외향적인 상태로 보입니다."
-    },
-    "movement": {
-      "low": "😴 전체적으로 움직임이 적었어요. 무기력하거나 조용한 마음 상태일 수 있어요.",
-      "high": " 움직임이 매우 활발했어요! 에너지가 넘치거나 산만한 상태일 수 있어요."
-    }
+  "amount": {
+    "low": "You used very little of the canvas. This may suggest a reserved mindset or a hesitation to express emotions.",
+    "medium": "You used a moderate amount of space. This indicates a balanced state of mind and steady emotional expression.",
+    "high": "You filled most of the canvas. Your emotions may be overflowing, or you might have a lot you'd like to express."
+  },
+  "color": {
+    "low": "You used only one color. This may reflect limited emotional range or a strong inward focus.",
+    "medium": "You used a few colors. It suggests emotional stability and a balanced response to your surroundings.",
+    "high": "You used a wide range of colors. This indicates emotional richness and a high level of creative energy."
+  },
+  "weight": {
+    "thin": "You mostly used thin lines. This suggests a delicate or cautious emotional state.",
+    "normal": "You used lines of moderate thickness. It shows a calm and stable expression of your emotions.",
+    "thick": "You used thick lines. This may indicate intense emotions or a strong sense of confidence."
+  },
+  "brush": {
+    "normal": "You used a standard brush. Your expression appears focused and consistent.",
+    "dotted": "You used a dotted brush frequently. This may point to repetitive thoughts or a mind that’s stuck in a certain pattern.",
+    "soft": "You used a soft brush often. This suggests sensitivity and a gentle emotional tone."
+  },
+  "positionY": {
+    "top": "Your drawing is concentrated at the top of the canvas. This may reflect hope or future-oriented thinking.",
+    "center": "Your drawing is centered vertically. This suggests a focus on the present moment and emotional balance.",
+    "bottom": "You drew mostly near the bottom. This may reflect a desire for stability or a grounded, realistic mindset."
+  },
+  "positionX": {
+    "left": "Your drawing leans toward the left. This could indicate reflection on the past or inward-focused thinking.",
+    "center": "Your drawing is centered horizontally. This suggests a grounded focus on the present.",
+    "right": "Your drawing leans toward the right. This may reflect curiosity about the future or an outward, forward-looking mindset."
+  },
+  "movement": {
+    "low": "There is little movement in your drawing. This may suggest calmness or low energy levels.",
+    "high": "Your drawing is full of movement. It reflects high energy, spontaneity, or emotional freedom."
   }
+}
+
+
   
   

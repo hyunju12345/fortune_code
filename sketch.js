@@ -52,7 +52,7 @@ function draw() {
 
 function performAnalysis() {
   if (positions.length === 0) {
-    document.getElementById("result").innerText = "먼저 그림을 그려주세요!";
+    document.getElementById("result").innerText = "Please draw something first!";
     return;
   }
 
@@ -64,7 +64,7 @@ function performAnalysis() {
   const avgX = sumX / positions.length;
   const avgY = sumY / positions.length;
 
-  let message = "✨ 당신의 그림 분석 결과 ✨\n\n";
+  let message = "✨ Your Drawing Analysis Result ✨\n\n";
 
   const colorCount = colorsUsed.size;
   const avgWeight = strokeWeights.reduce((a, b) => a + b, 0) / strokeWeights.length;
@@ -96,7 +96,7 @@ function performAnalysis() {
            : totalMovement > 6000 ? messages.movement.high + "\n"
            : "";
 
-  message += "\n🎵 오늘의 감정: " + mood + "\n";
+  message += "\n🎵 Mood of the Day: " + mood + "\n";
 
   const bgm = document.getElementById("bgm");
   const musicMap = {
@@ -110,18 +110,18 @@ function performAnalysis() {
   bgm.play().then(() => {
     bgm.muted = false;
   }).catch(() => {
-    console.warn("음악 자동 재생 차단됨. 클릭 후 재생 가능함.");
+    console.warn("Autoplay was blocked. Click to enable music.");
   });
 
   fetch(`https://musicbrainz.org/ws/2/artist?query=tag:${mood}&fmt=json`)
     .then(res => res.json())
     .then(data => {
-      const artist = data.artists && data.artists.length > 0 ? data.artists[0].name : "알 수 없음";
-      message += `🎧 추천 아티스트: ${artist}`;
+      const artist = data.artists && data.artists.length > 0 ? data.artists[0].name : "Unknown";
+      message += `🎧 Recommended Artist: ${artist}`;
       document.getElementById("result").innerText = message;
     })
     .catch(() => {
-      message += "🎧 음악 정보를 불러오는 데 실패했습니다.";
+      message += "🎧 Failed to load music data.";
       document.getElementById("result").innerText = message;
     });
 }
