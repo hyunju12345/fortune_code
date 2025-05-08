@@ -1,37 +1,37 @@
 {
   "amount": {
-    "low": "You used very little of the canvas. This may suggest a reserved mindset or a hesitation to express emotions.",
-    "medium": "You used a moderate amount of space. This indicates a balanced state of mind and steady emotional expression.",
-    "high": "You filled most of the canvas. Your emotions may be overflowing, or you might have a lot you'd like to express."
+    "low": "You filled only a small part of the canvas. Perhaps you're feeling cautious today, or simply not ready to reveal too much.",
+    "medium": "You used a comfortable amount of space. Your expression feels thoughtful and balanced, as if you're calmly present with yourself.",
+    "high": "You filled the canvas with movement and color. There's a strong desire to express something — maybe something that’s been waiting inside for a while."
   },
   "color": {
-    "low": "You used only one color. This may reflect limited emotional range or a strong inward focus.",
-    "medium": "You used a few colors. It suggests emotional stability and a balanced response to your surroundings.",
-    "high": "You used a wide range of colors. This indicates emotional richness and a high level of creative energy."
+    "low": "You stayed with a single color. This might reflect a focused emotional state, or a quiet moment of introspection.",
+    "medium": "You chose a few colors to work with. There’s a sense of emotional steadiness and awareness of your surroundings.",
+    "high": "Your drawing bursts with color. It suggests that you're in touch with a wide range of feelings — imaginative, expressive, and open-hearted."
   },
   "weight": {
-    "thin": "You mostly used thin lines. This suggests a delicate or cautious emotional state.",
-    "normal": "You used lines of moderate thickness. It shows a calm and stable expression of your emotions.",
-    "thick": "You used thick lines. This may indicate intense emotions or a strong sense of confidence."
+    "thin": "Your lines are delicate and fine. It feels like you’re paying close attention — perhaps you're in a sensitive or careful state of mind.",
+    "normal": "Your strokes are steady and even. There’s a sense of inner balance and quiet confidence in your expression.",
+    "thick": "You used bold, heavy strokes. This could reflect intense feelings, strong convictions, or a need to be seen and heard clearly."
   },
   "brush": {
-    "normal": "You used a standard brush. Your expression appears focused and consistent.",
-    "dotted": "You used a dotted brush frequently. This may point to repetitive thoughts or a mind that’s stuck in a certain pattern.",
-    "soft": "You used a soft brush often. This suggests sensitivity and a gentle emotional tone."
+    "normal": "You used a standard brush most of the time. Your focus feels grounded and consistent, like you’re moving with clarity.",
+    "dotted": "You leaned into dotted textures. That repetition might reflect lingering thoughts, restlessness, or a loop your mind is caught in.",
+    "soft": "You chose a soft brush frequently. It brings out tenderness in your strokes — gentle, emotional, and quietly expressive."
   },
   "positionY": {
-    "top": "Your drawing is concentrated at the top of the canvas. This may reflect hope or future-oriented thinking.",
-    "center": "Your drawing is centered vertically. This suggests a focus on the present moment and emotional balance.",
-    "bottom": "You drew mostly near the bottom. This may reflect a desire for stability or a grounded, realistic mindset."
+    "top": "Your marks gather near the top of the canvas. This could speak to hopefulness, future dreams, or a desire to rise above the present.",
+    "center": "Your drawing stays centered. This suggests you're rooted in the present moment, aware and emotionally balanced.",
+    "bottom": "You drew near the lower part of the canvas. It may reflect a longing for stability, or a grounded and realistic mindset."
   },
   "positionX": {
-    "left": "Your drawing leans toward the left. This could indicate reflection on the past or inward-focused thinking.",
-    "center": "Your drawing is centered horizontally. This suggests a grounded focus on the present.",
-    "right": "Your drawing leans toward the right. This may reflect curiosity about the future or an outward, forward-looking mindset."
+    "left": "You placed your drawing toward the left side. This can represent reflection, memories, or attention turned inward.",
+    "center": "Your drawing sits near the middle. It gives a feeling of presence — like you're focused on where you are right now.",
+    "right": "You drew mostly to the right. This may suggest you're leaning toward what comes next — curious, open, and forward-looking."
   },
   "movement": {
-    "low": "There is little movement in your drawing. This may suggest calmness or low energy levels.",
-    "high": "Your drawing is full of movement. It reflects high energy, spontaneity, or emotional freedom."
+    "low": "There wasn’t much movement in your drawing. It feels calm and still — perhaps you’re conserving energy or turning inward today.",
+    "high": "Your strokes are full of energy and motion. There’s a liveliness here — maybe a spark, a rush, or a desire to break free."
   }
 }
 

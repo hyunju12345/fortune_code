@@ -9,6 +9,20 @@ let isEraser = false;
 let brushMode = "normal";
 let mood = "";
 
+// 🌸 한글 운세 단어 리스트
+const koreanFortunes = [
+  { word: "사랑", meaning: "Love" },
+  { word: "행복", meaning: "Happiness" },
+  { word: "평화", meaning: "Peace" },
+  { word: "희망", meaning: "Hope" },
+  { word: "성장", meaning: "Growth" },
+  { word: "치유", meaning: "Healing" },
+  { word: "모험", meaning: "Adventure" },
+  { word: "기회", meaning: "Opportunity" },
+  { word: "자유", meaning: "Freedom" },
+  { word: "깨달음", meaning: "Awakening" }
+];
+
 function preload() {
   loadJSON("fortunes.json", data => messages = data);
 }
@@ -97,6 +111,10 @@ function performAnalysis() {
            : "";
 
   message += "\n🎵 Mood of the Day: " + mood + "\n";
+
+  // 🌸 오늘의 한글 운세 추가
+  const randomKo = koreanFortunes[Math.floor(Math.random() * koreanFortunes.length)];
+  message += `🌸 Your Korean fortune word of the day is: ${randomKo.word} (${randomKo.meaning})\n`;
 
   const bgm = document.getElementById("bgm");
   const musicMap = {
